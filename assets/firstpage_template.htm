@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>SoundTracer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="javascript/environmentSetUp.js"></script>
+		<script type="text/javascript" src="javascript/formHandler.js"></script>
+		<script type="text/javascript" src="javascript/ajax.js"></script>
+		<script type="text/javascript" src="javascript/navigation.js"></script>
+		<script type="text/javascript" src="javascript/searchResults.js"></script>
+		<script type="text/javascript" src="javascript/details.js"></script>
+		<script type="text/javascript" src="javascript/queryStringInterpreter.js"></script>
+		<script type="text/javascript" src="javascript/dateFormatter.js"></script>
+		<script type="text/javascript" src="javascript/recordCollector.js"></script>
+		<link type="text/css" href="css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header id="actionbar">
+			<nav>
+			<ul>
+			<li id="backarrow"><a href="home.html" alt="home&logo"><img src="../assets/graphics/soundchasericon36px.png" /></a></li>
+			</ul>
+			</nav>
+			<h1>SoundTracer</h1>
+			<div id="search">
+				<form name="searchForm">
+				<label for="searchField">Search</label>
+				<input type="text" id="searchField">
+				<select name="searchType">
+				<option value="">All</option>			
+				<option value="artist">Artist</option>			
+				<option value="master">Master</option>			
+				<option value="release">Release</option>			
+				<option value="label">Label</option>			
+				</select>
+				<button>Go</button>
+				</form>
+				<!-- bring into dropdown <p>Search for artist/master/release/label</p>  -->
+			</div>
+		</header>
+
+
+
+<ul id="results"></ul></div>
+	
+</body></html>

@@ -1,0 +1,1798 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>SoundTracer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script type="text/javascript" src="javascript/library.js"></script>
+		<script type="text/javascript" src="javascript/items.js"></script>
+		<script type="text/javascript" src="javascript/arraySorter.js"></script>
+		<script type="text/javascript" src="javascript/viewController.js"></script>
+		<script type="text/javascript" src="javascript/environmentSetUp.js"></script>
+		<script type="text/javascript" src="javascript/formHandler.js"></script>
+		<script type="text/javascript" src="javascript/tracklister.js"></script>
+		<script type="text/javascript" src="javascript/imageGallery.js"></script>
+		<script type="text/javascript" src="javascript/ajax.js"></script>
+		<script type="text/javascript" src="javascript/navigation.js"></script>
+		<script type="text/javascript" src="javascript/details.js"></script>
+		<script type="text/javascript" src="javascript/queryStringInterpreter.js"></script>
+		<script type="text/javascript" src="javascript/dateFormatter.js"></script>
+		<script type="text/javascript" src="javascript/release.js"></script>
+		<script type="text/javascript" src="javascript/label.js"></script>
+		<script type="text/javascript" src="javascript/artist.js"></script>
+		<script type="text/javascript" src="javascript/master.js"></script>
+		<script type="text/javascript" src="javascript/paginator.js"></script>
+		<script type="text/javascript" src="javascript/lister.js"></script>
+		<script type="text/javascript" src="javascript/layoutController.js"></script>
+		<script type="text/javascript" src="javascript/recordCollector.js"></script>
+		<link type="text/css" href="css/structure.css" rel="stylesheet" />
+		<link type="text/css" href="css/styles.css" rel="stylesheet" />
+		<!-- <link type="text/css" href="css/details.css" rel="stylesheet" /> -->
+	</head>
+	<body>
+		<div id="wrapper">
+		<header id="actionbar">
+			<nav>
+			<ul>
+			<li id="backarrow"><a href="home.html"><img src="../assets/graphics/soundchasericon36px.png"  alt="home and logo" /></a></li>
+			</ul>
+			</nav>
+			<h1>SoundTracer</h1>
+			<div id="search">
+				<form name="searchForm">
+				<label for="searchField">Search</label>
+				<input type="text" id="searchField">
+				<select name="searchType">
+				<option value="">All</option>			
+				<option value="artist">Artist</option>			
+				<option value="master">Master</option>			
+				<option value="release">Release</option>			
+				<option value="label">Label</option>			
+				</select>
+				<button>Go</button>
+				</form>
+				<!-- bring into dropdown <p>Search for artist/master/release/label</p>  -->
+			</div>
+		</header>
+
+			<div id="content">
+				
+				<ul id="pageNav">
+					<li>
+						<a class="prev" href="#">back</a>
+					</li>
+
+
+				<!-- <li><a class="next" href="#">next</a></li> only using back arrow now-->	
+
+				</ul>
+
+				
+<ul id="pages" style="width: 814px; left: 0px; ">
+<li class="release live  page " style="width: 704px; ">
+<h2>Aphex Twin</h2>
+<div class="images">
+<ul style="width: 150px; -webkit-transition: left; ">
+<li class="thumb primary">
+<img src="http://api.discogs.com/image/R-150-848637-1300287750.jpeg">
+</li>
+</ul>
+</div>
+<div class="artists">
+<h3>Artists</h3>
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</div>
+<div class="labels">
+<h3>Label</h3>
+<ul>
+<li>
+<a href="http://api.discogs.com/labels/75490" class="label">Домашняя Коллекция</a>
+<span class="cat">none</span>
+</li>
+</ul>
+</div>
+<div class="formats">
+<h3>Format</h3>
+<ul>
+<li>
+<span class="formatName">CD</span>
+<span class="descriptions">
+	<ul>
+	<li>CD-ROM</li>
+	<li>Unofficial Release</li>
+	<li>Compilation</li>
+	</ul>
+		</span>
+</li>
+</ul>
+</div>
+<div class="country">
+<h3>Country</h3>
+<p>Russia</p>
+</div>
+<div class="released">
+<h3>Released</h3>
+<p>2002</p>
+</div>
+<div class="genres">
+<h3>Genres</h3>
+<ul>
+<li>Electronic</li>
+</ul>
+</div>
+<div class="styles">
+<h3>Styles</h3>
+<ul>
+<li>IDM</li>
+<li>Ambient</li>
+</ul>
+</div>
+<div id="tracklist">
+<h3>Tracklist</h3>
+<table>
+<tbody>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Selected Ambient Works 85-92 (1992)</td>
+</tr>
+<tr>
+<td class="position">1</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Xtal</td>
+</tr>
+<tr>
+<td class="position">2</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Tha</td>
+</tr>
+<tr>
+<td class="position">3</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Pulsewidth</td>
+</tr>
+<tr>
+<td class="position">4</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Ageispolis</td>
+</tr>
+<tr>
+<td class="position">5</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">I</td>
+</tr>
+<tr>
+<td class="position">6</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Green Calx</td>
+</tr>
+<tr>
+<td class="position">7</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Heliosphan</td>
+</tr>
+<tr>
+<td class="position">8</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">We Are The Music Makers</td>
+</tr>
+<tr>
+<td class="position">9</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Schottkey 7th Path</td>
+</tr>
+<tr>
+<td class="position">10</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Ptolemy</td>
+</tr>
+<tr>
+<td class="position">11</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Hedphelym</td>
+</tr>
+<tr>
+<td class="position">12</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Delphium</td>
+</tr>
+<tr>
+<td class="position">13</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Actum</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Surfing On Sine Waves [As Polygon Window] (1993)</td>
+</tr>
+<tr>
+<td class="position">14</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Polygon Window</td>
+</tr>
+<tr>
+<td class="position">15</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Audax Powder</td>
+</tr>
+<tr>
+<td class="position">16</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Quoth</td>
+</tr>
+<tr>
+<td class="position">17</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">If It Really Is Me</td>
+</tr>
+<tr>
+<td class="position">18</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Supremacy II</td>
+</tr>
+<tr>
+<td class="position">19</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Ut1 - Dot</td>
+</tr>
+<tr>
+<td class="position">20</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Untitled</td>
+</tr>
+<tr>
+<td class="position">21</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Quixote</td>
+</tr>
+<tr>
+<td class="position">22</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/2931" class="artist">Polygon Window</a>
+</li>
+</ul>
+</td>
+<td class="title">Quino-Phec</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">On [Single] (1993)</td>
+</tr>
+<tr>
+<td class="position">23</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">On</td>
+</tr>
+<tr>
+<td class="position">24</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">73-Yips</td>
+</tr>
+<tr>
+<td class="position">25</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">D-Scape</td>
+</tr>
+<tr>
+<td class="position">26</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Xepha</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Selected Ambient Works Volume II CD1 (1994)</td>
+</tr>
+<tr>
+<td class="position">27</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Cliffs</td>
+</tr>
+<tr>
+<td class="position">28</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Radiator</td>
+</tr>
+<tr>
+<td class="position">29</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Rhubarb</td>
+</tr>
+<tr>
+<td class="position">30</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Hankie</td>
+</tr>
+<tr>
+<td class="position">31</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Grass</td>
+</tr>
+<tr>
+<td class="position">32</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Mold</td>
+</tr>
+<tr>
+<td class="position">33</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Curtains</td>
+</tr>
+<tr>
+<td class="position">34</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Blur</td>
+</tr>
+<tr>
+<td class="position">35</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Weathered Stone</td>
+</tr>
+<tr>
+<td class="position">36</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Tree</td>
+</tr>
+<tr>
+<td class="position">37</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Domino</td>
+</tr>
+<tr>
+<td class="position">38</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">White Blur 1</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Selected Ambient Works Volume II CD2 (1994)</td>
+</tr>
+<tr>
+<td class="position">39</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Blue Calx</td>
+</tr>
+<tr>
+<td class="position">40</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Parallel Stripes</td>
+</tr>
+<tr>
+<td class="position">41</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Shiny Metal Rods</td>
+</tr>
+<tr>
+<td class="position">42</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Grey Stripe</td>
+</tr>
+<tr>
+<td class="position">43</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Z Twig</td>
+</tr>
+<tr>
+<td class="position">44</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Window Sill</td>
+</tr>
+<tr>
+<td class="position">45</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Hexagon</td>
+</tr>
+<tr>
+<td class="position">46</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Lichen</td>
+</tr>
+<tr>
+<td class="position">47</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Spots</td>
+</tr>
+<tr>
+<td class="position">48</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Tassels</td>
+</tr>
+<tr>
+<td class="position">49</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">White Blur 2</td>
+</tr>
+<tr>
+<td class="position">50</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Match Sticks</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Words &amp; Music [Single] (1994)</td>
+</tr>
+<tr>
+<td class="position">51</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Intro Words</td>
+</tr>
+<tr>
+<td class="position">52</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Blue Calx</td>
+</tr>
+<tr>
+<td class="position">53</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Words</td>
+</tr>
+<tr>
+<td class="position">54</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Parallel Stripes</td>
+</tr>
+<tr>
+<td class="position">55</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Words</td>
+</tr>
+<tr>
+<td class="position">56</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Hexagon</td>
+</tr>
+<tr>
+<td class="position">57</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Words</td>
+</tr>
+<tr>
+<td class="position">58</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Words (Processed)</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Classics (1995)</td>
+</tr>
+<tr>
+<td class="position">59</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Digeridoo</td>
+</tr>
+<tr>
+<td class="position">60</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Flap Head</td>
+</tr>
+<tr>
+<td class="position">61</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Phloam</td>
+</tr>
+<tr>
+<td class="position">62</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Isoprophlex</td>
+</tr>
+<tr>
+<td class="position">63</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Polynomial-c</td>
+</tr>
+<tr>
+<td class="position">64</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Tamphex (Headphuq Mix)</td>
+</tr>
+<tr>
+<td class="position">65</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Phlange Phace</td>
+</tr>
+<tr>
+<td class="position">66</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Dodeccaheedron</td>
+</tr>
+<tr>
+<td class="position">67</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Analogue Bubblebath 1</td>
+</tr>
+<tr>
+<td class="position">68</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Metapharstic (Classics Edit)</td>
+</tr>
+<tr>
+<td class="position">69</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/16135" class="artist">Mescalinum United</a>
+</li>
+</ul>
+</td>
+<td class="title">We Have Arrived (Aphex Twin QQT Mix)</td>
+</tr>
+<tr>
+<td class="position">70</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/16135" class="artist">Mescalinum United</a>
+</li>
+</ul>
+</td>
+<td class="title">We Have Arrived (Aphex Twin TTQ Mix)</td>
+</tr>
+<tr>
+<td class="position">71</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Digeridoo (Live In Cornwall, 1990)</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Donkey Rhubarb [EP] (1995)</td>
+</tr>
+<tr>
+<td class="position">72</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Donkey Rhubarb</td>
+</tr>
+<tr>
+<td class="position">73</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Vaz Deferenz</td>
+</tr>
+<tr>
+<td class="position">74</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Icct Hedral (Philip Glass Orchestration)</td>
+</tr>
+<tr>
+<td class="position">75</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Pancake Lizard</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">I Care Because You Do (1995)</td>
+</tr>
+<tr>
+<td class="position">76</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Acrid Avid Jamshred</td>
+</tr>
+<tr>
+<td class="position">77</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">The Waxen Pith</td>
+</tr>
+<tr>
+<td class="position">78</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Wax The Nip</td>
+</tr>
+<tr>
+<td class="position">79</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Icct Hedral (Edit)</td>
+</tr>
+<tr>
+<td class="position">80</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Ventolin (Video Version)</td>
+</tr>
+<tr>
+<td class="position">81</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Come On You Slags!</td>
+</tr>
+<tr>
+<td class="position">82</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Start As You Mean To Go On</td>
+</tr>
+<tr>
+<td class="position">83</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Wet Tip Hen Ax / Mookid</td>
+</tr>
+<tr>
+<td class="position">84</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Albero Balsalm / Cow Cud Is A Twin</td>
+</tr>
+<tr>
+<td class="position">85</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Next Heap With</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Richard D. James Album [+US Bonus Tracks] (1996)</td>
+</tr>
+<tr>
+<td class="position">86</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">4</td>
+</tr>
+<tr>
+<td class="position">87</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Cornish Acid</td>
+</tr>
+<tr>
+<td class="position">88</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Peek 824545201</td>
+</tr>
+<tr>
+<td class="position">89</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Fingerbib</td>
+</tr>
+<tr>
+<td class="position">90</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Carn Marth</td>
+</tr>
+<tr>
+<td class="position">91</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">To Cure A Weakling Child</td>
+</tr>
+<tr>
+<td class="position">92</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Goon Gumpas</td>
+</tr>
+<tr>
+<td class="position">93</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Yellow Calx</td>
+</tr>
+<tr>
+<td class="position">94</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Girl/Boy Song</td>
+</tr>
+<tr>
+<td class="position">95</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Logon Rock Witch</td>
+</tr>
+<tr>
+<td class="position">96</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Milk Man</td>
+</tr>
+<tr>
+<td class="position">97</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Inkey$</td>
+</tr>
+<tr>
+<td class="position">98</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Girl/Boy Song (£18 Snare Rush Mix)</td>
+</tr>
+<tr>
+<td class="position">99</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Beetles</td>
+</tr>
+<tr>
+<td class="position">100</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Girl/Boy Song (Redruth Mix)</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Come To Daddy [Single] (1997)</td>
+</tr>
+<tr>
+<td class="position">101</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Come To Daddy (Pappy Mix)</td>
+</tr>
+<tr>
+<td class="position">102</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Come To Daddy (Little Lord Faulteroy Mix)</td>
+</tr>
+<tr>
+<td class="position">103</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Flim</td>
+</tr>
+<tr>
+<td class="position">104</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Bucephalus Bouncing Ball</td>
+</tr>
+<tr>
+<td class="position">105</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Come To Daddy (Mummy Mix)</td>
+</tr>
+<tr>
+<td class="position">106</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">To Cure A Weakling Child (Contour Regard)</td>
+</tr>
+<tr>
+<td class="position">107</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Funny Little Man</td>
+</tr>
+<tr>
+<td class="position">108</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Iz-Us</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Windowlicker [Single] (1999)</td>
+</tr>
+<tr>
+<td class="position">109</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Windowlicker</td>
+</tr>
+<tr>
+<td class="position">110</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Equation</td>
+</tr>
+<tr>
+<td class="position">111</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Nannou</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Drukqs CD1 (2001)</td>
+</tr>
+<tr>
+<td class="position">112</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Jynweythek</td>
+</tr>
+<tr>
+<td class="position">113</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Vordhosbn</td>
+</tr>
+<tr>
+<td class="position">114</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Kladfvgbung Micshk</td>
+</tr>
+<tr>
+<td class="position">115</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Omgyjya Switch7</td>
+</tr>
+<tr>
+<td class="position">116</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Strotha Tynhe</td>
+</tr>
+<tr>
+<td class="position">117</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Gwely Mernans</td>
+</tr>
+<tr>
+<td class="position">118</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Bbydhyonchord</td>
+</tr>
+<tr>
+<td class="position">119</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Cock/Ver10</td>
+</tr>
+<tr>
+<td class="position">120</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Avril 14th</td>
+</tr>
+<tr>
+<td class="position">121</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Mt Saint Michel Mix + St Michaels Mount</td>
+</tr>
+<tr>
+<td class="position">122</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Gwarek2</td>
+</tr>
+<tr>
+<td class="position">123</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Orban Eq Trx4</td>
+</tr>
+<tr>
+<td class="position">124</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Aussois</td>
+</tr>
+<tr>
+<td class="position">125</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Hy A Scullyas Lyf A Dhagrow</td>
+</tr>
+<tr>
+<td class="position">126</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Kesson Daslef</td>
+</tr>
+<tr>
+<td class="position">&nbsp;</td>
+<td class="artists">&nbsp;</td>
+<td class="title">Drukqs CD2 (2001)</td>
+</tr>
+<tr>
+<td class="position">127</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">54 Cymru Beats</td>
+</tr>
+<tr>
+<td class="position">128</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Btoum-Roumada</td>
+</tr>
+<tr>
+<td class="position">129</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Lornaderek</td>
+</tr>
+<tr>
+<td class="position">130</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Penty Harmonium</td>
+</tr>
+<tr>
+<td class="position">131</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Meltphace 6</td>
+</tr>
+<tr>
+<td class="position">132</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Bit4</td>
+</tr>
+<tr>
+<td class="position">133</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Prep Gwarlek 3b</td>
+</tr>
+<tr>
+<td class="position">134</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Father</td>
+</tr>
+<tr>
+<td class="position">135</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Taking Control</td>
+</tr>
+<tr>
+<td class="position">136</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Petiatil Cx Htdui</td>
+</tr>
+<tr>
+<td class="position">137</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Ruglen Holon</td>
+</tr>
+<tr>
+<td class="position">138</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Afx237 V7</td>
+</tr>
+<tr>
+<td class="position">139</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Ziggomatic V17</td>
+</tr>
+<tr>
+<td class="position">140</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Beskhu3epnm</td>
+</tr>
+<tr>
+<td class="position">141</td>
+<td class="artists">
+<ul>
+<li>
+<a href="http://api.discogs.com/artists/45" class="artist">Aphex Twin</a>
+</li>
+</ul>
+</td>
+<td class="title">Nanou2</td>
+</tr>
+</tbody>
+	<thead>
+<tr>
+<th>Position</th>
+<th>Artists</th>
+<th>Title</th>
+</tr>
+</thead>
+</table>
+</div>
+<div class="notes">
+<h3>Notes</h3>
+<p>Released as part of the Красная серия. MP3: 128 kbps, 44kHz, except &lt;i&gt;Drukqs&lt;/i&gt; 192 kbps. Comes with Winamp and cdboom Navigator for Windows 98, NT, 2000.</p>
+</div>
+<div class="identifiers">
+<h3>Identifiers</h3>
+<ul>
+<li>
+<span class="type">Matrix / Runout</span>
+<span class="description">undefined</span>
+<span class="value">AAA-1990</span>
+</li>
+</ul>
+</div>
+</li>
+
+</ul>
+<p>
+<a href="http://api.discogs.com/database/search?q=traffic&amp;per_page=5&amp;type=&amp;page=5">Next<span class="counter">Displaying 20 of 7748 items</span>
+</a>
+</p>
+
+
+
+			</div>
+
+
+	
+	</div><!-- end of wrapper -->
+</body></html>

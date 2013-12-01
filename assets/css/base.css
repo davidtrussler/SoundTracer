@@ -1,0 +1,179 @@
+/*
+ * BEGIN CSS Mobile Reset -- 
+ * based on http://www.vcarrer.com/2010/11/css-mobile-reset.html
+**/
+html, 
+body {
+	margin: 0;
+	padding: 0; 
+	border: 0;
+	/* text-align: center; */
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.25;
+	font-size: 0.9em;
+	/* background: #fff;
+	padding:5px;
+	color: #000;
+	word-wrap: break-word; */
+	-webkit-text-size-adjust: none; /*for iOS on change of orientation */
+}
+
+p, ul, h1, h2, h3, h4, 
+fieldset, legend, input, button {
+	padding: 0; 
+	margin: 0; 
+}
+
+ul {
+	list-style: none; 
+}
+
+table { 
+	width: 100%; 
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+/* -- END CSS Mobile Reset */
+
+p, ul, legend, input, button {
+	/* font-size: 1em; */
+}
+
+p, ul {
+	margin: 0.25em 0 0; 
+}
+
+p:first-child, 
+ul:first-child {
+	margin-top: 0; 
+}
+
+/* elements to be cleared -- *
+li.page div.images ul li:after, 
+li.page div.images:after {
+	content: '.';
+	display: block; 
+	clear: both;  
+	visibility: hidden; 
+	height: 0; 
+}
+* -- elements to be cleared */
+
+h1 {
+	font-size: 1.5em; 
+}
+
+h2 {
+	font-size: 1.2em; 
+}
+
+a {
+	color: inherit; 
+	text-decoration: none; 
+}
+
+td {
+	text-align: left; 	
+	padding: 0 0.5em 0 0; 
+}
+
+header {
+	padding: 0.4em 2%; 
+	line-height: 36px; 
+	height: 36px; 
+	overflow: hidden; 
+	color: #fff; 
+	background: #000; 
+}
+
+header > * {
+	float: left; 
+	margin: 0 0 0 2.08333333333%; 
+	margin: 0 0 0 -webkit-calc(2% * 100 / 96); 
+}
+
+header > *:first-child {
+	margin-left: 0; 
+}
+
+header > .actions {
+	float: right; 
+}
+
+#content {
+	width: 96%; 
+	overflow: hidden;
+	/* position: relative; 
+	top: 40px; */ 
+	margin: 0 2%; 
+}
+
+fieldset.sort {
+	position: absolute; 
+	top: 0; 
+	text-align: right;
+	padding: 0;
+	border: none;
+}
+
+ul#pageNav li, 
+ul.advance li, 
+ul.releases li, 
+ul.versions li {
+	padding: 0.5em 0; 
+}
+
+ul#pages {
+	clear: both;
+	position: relative; 
+	margin-top: 0; 
+	-webkit-transition-property: left; 
+	-webkit-transition-duration: 0.5s; 
+	-webkit-transition-timing-function: linear; 
+}
+
+ul#pages.orientationChange {
+	-webkit-transition-duration: 0; 
+}
+
+li.page {
+	float: left; 
+	height: 100%; 
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/*
+li.listing {
+	clear: both;
+}
+*/
+
+#footer {
+	clear: both; 
+}
+
+/* BEGIN loading Message -- */
+#loadMessageContainer {
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	text-align: center; 
+	background: gray; 
+}
+
+#loadMessageContainer p {
+	display: inline-block;
+	padding: .25em;
+	font-size: 2em;
+	position: relative;
+	top: 50%;
+	margin-top: -1.125em;
+	border: solid 4px;
+}
+/* -- END loading Message */

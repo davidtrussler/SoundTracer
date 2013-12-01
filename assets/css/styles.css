@@ -1,0 +1,88 @@
+/*---------->>> RESET <<<-----------*/
+
+/* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
+    html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+    body{line-height:1}
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+    nav ul{list-style:none}
+    blockquote,q{quotes:none}
+    blockquote:before,blockquote:after,q:before,q:after{content:none}
+    a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+    ins{background-color:#ff9;color:#000;text-decoration:none}
+    mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+    del{text-decoration:line-through}
+    abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+    table{border-collapse:collapse;border-spacing:0}
+    hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+    input,select{vertical-align:middle}
+    
+    
+body {
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,Helvetica,sans-serif;
+	/* font-size: 62.5%; */ /* makes 1em=10px - removed as not needed on mobile devices */
+	line-height: 1.5;
+}
+
+#actionbar {
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+ 	height: 36px;
+ 	background-color: black;
+ 	padding: 2px;
+ 	overflow: hidden; 
+ }
+ 
+#actionbar ul, #actionbar img {
+	float: left;
+} 
+ 
+#actionbar ul.actions {
+	float: right;
+} 
+
+#actionbar a {
+	color: #fff;
+} 
+
+nav li {
+ 	list-style: none; 
+ }
+
+nav, h1 {
+ 	float: left;
+ 	/*width:  20%;*/
+ }
+
+
+li.thumb {
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ 
+ /*---------->>> TYPE <<<-----------*/
+ 
+ h1 {
+ 	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,Helvetica,sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	color: white;
+ }
+ 
+ /*.listing, .images, .artists, .labels li, .formats li, .country li, .released li, .genres li, .styles li {
+ 	font-size: 1.2em;
+ }*/
+ 
+ 
+ #pages {
+  	font-size: 1.2em;
+  	}
+  	
+ #pages .title {
+   	font-size: 1.16666667em;
+ 	font-weight: bold;
+ } 	

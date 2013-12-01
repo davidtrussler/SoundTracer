@@ -1,0 +1,64 @@
+/* search results -- */
+#searchResults #results li.listing {
+	border-bottom: solid 1px; 
+}
+
+#searchResults #results li a span.type:before, 
+#searchResults #results li a span.counter:before {
+	content: ' ('; 
+}
+#searchResults #results li a span.type:after, 
+#searchResults #results li a span.counter:after {
+	content: ')'; 
+}
+/* -- search results */
+
+/* release -- */
+#searchResults #mainDetails .name:after {
+	content: ': '; 
+}
+
+#searchResults #mainDetails #labels .cat:before {
+	content: ' ('; 
+}
+
+#searchResults #mainDetails #labels .cat:after {
+	content: ')'; 
+}
+
+#searchResults #mainDetails #formats .qty:after {
+	content: ' x '; 
+}
+/* -- release */
+
+#details > div {
+	clear: both; 
+}
+
+#details #images li {
+	display: inline-block;
+	float: left;  
+}
+
+#versions .page {
+	display: none; 
+}
+
+#versions .page.current {
+	display: block; 
+}
+
+#versions .page ul.listings {
+	clear: both; 
+}
+
+#versions .page li.pagination li {
+	display: inline-block;
+	float: left;  
+	padding: 0.25em; 
+}
+
+#versions .page li.pagination li.current {
+	color: white;
+	background: black;  
+}

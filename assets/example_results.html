@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>SoundTracer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="javascript/environmentSetUp.js"></script>
+		<script type="text/javascript" src="javascript/formHandler.js"></script>
+		<script type="text/javascript" src="javascript/ajax.js"></script>
+		<script type="text/javascript" src="javascript/navigation.js"></script>
+		<script type="text/javascript" src="javascript/searchResults.js"></script>
+		<script type="text/javascript" src="javascript/details.js"></script>
+		<script type="text/javascript" src="javascript/queryStringInterpreter.js"></script>
+		<script type="text/javascript" src="javascript/dateFormatter.js"></script>
+		<script type="text/javascript" src="javascript/recordCollector.js"></script>
+		<link type="text/css" href="css/structure.css" rel="stylesheet" />
+		<link type="text/css" href="css/styles.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+		<header id="actionbar">
+			<nav>
+			<ul>
+			<li id="backarrow"><a href="home.html"><img src="../assets/graphics/soundchasericon36px.png"  alt="home and logo" /></a></li>
+			</ul>
+			</nav>
+			<h1>SoundTracer</h1>
+			<div id="search">
+				<form name="searchForm">
+				<label for="searchField">Search</label>
+				<input type="text" id="searchField">
+				<select name="searchType">
+				<option value="">All</option>			
+				<option value="artist">Artist</option>			
+				<option value="master">Master</option>			
+				<option value="release">Release</option>			
+				<option value="label">Label</option>			
+				</select>
+				<button>Go</button>
+				</form>
+				<!-- bring into dropdown <p>Search for artist/master/release/label</p>  -->
+			</div>
+		</header>
+
+			<div id="content">
+				
+				<ul id="pageNav">
+					<li>
+						<a class="prev" href="#">back</a>
+					</li>
+
+
+				<!-- <li><a class="next" href="#">next</a></li> only using back arrow now-->	
+
+				</ul>
+
+				
+<ul id="pages" style="left: 0px; width: 100%">
+
+<li class="searchResults live  page " style="width: 100%"> <!-- width: 814px; and ul -->
+
+<h2>Search results for “traffic”</h2>
+	<ul>
+	<!--CHANGE FROM THIS created in JS
+		<li class="listing">
+		<a href="http://api.discogs.com/releases/4281558">
+		<ul>
+		<li class="thumb"><img src="http://api.discogs.com/image/R-90-4281558-1365599998-9075.jpeg"></li>
+		<li class="title">Traffic Jam - Jamany's Pirates</li>
+		<li class="label">Motor Music Gmbh</li>
+		<li class="catno">Traffic Jam</li>
+		<li class="format">Vinyl,12",Maxi-Single</li>
+		<li class="country">Netherlands</li>
+		<li class="type">release</li>
+		</ul>
+		</a>
+	</li> 	-->
+	<li class="listing">
+		<a href="http://api.discogs.com/releases/4281558">
+
+		<div class="thumb"><img src="http://api.discogs.com/image/R-90-4281558-1365599998-9075.jpeg"></div>
+		
+		<ul>
+		<li class="title">Traffic Jam - Jamany's Pirates</li>
+		<li class="label">Motor Music Gmbh</li>
+		<li class="catno">Traffic Jam</li>
+		<li class="format">Vinyl,12",Maxi-Single</li>
+		<li class="country">Netherlands</li>
+		<li class="type"><img src="../assets/graphics/release32.png" alt="releases"></li>
+		</ul>
+		</a>
+	</li>
+	
+	<li class="listing"><a href="http://api.discogs.com/artists/64748">
+
+		<div class="thumb"><img src="http://api.discogs.com/image/A-90-64748-1337674070-4943.jpeg"></div>
+		<ul>		<li class="title">Traffic</li>
+		
+		
+				<li class="title">Karl Axel Bissler - Traffic</li>
+		<li class="label">Dubwise</li>
+		<li class="catno">DUBWISE03</li>
+		
+		
+		<li class="type"><img src="../assets/graphics/artist32.png" alt="artist"></li>
+	</ul></a>
+	</li>
+	<li class="listing"><a href="http://api.discogs.com/labels/23333">
+		<div class="thumb"><img src="http://api.discogs.com/image/L-90-23333-1275328373.jpeg"></div>
+				<ul>
+		<li class="title">Traffic</li>
+		
+		<li class="title">Karl Axel Bissler - Traffic</li>
+		<li class="label">Dubwise</li>
+		<li class="catno">DUBWISE03</li>
+				<li class="type"><img src="../assets/graphics/label32.png" alt="label"></li>
+		
+		</ul></a>
+	</li>
+	<li class="listing"><a href="http://api.discogs.com/masters/99713">
+		<div class="thumb"><img src="http://api.discogs.com/image/R-90-36225-1125437160.jpeg"></div>
+				<ul>
+		<li class="title">Karl Axel Bissler - Traffic</li>
+		<li class="label">Dubwise</li>
+		<li class="catno">DUBWISE03</li>
+		<li class="format">Vinyl,10",Limited Edition</li>
+		<li class="year">2001</li>
+		<li class="country">Sweden</li>
+		<li class="type"><img src="../assets/graphics/master32.png" alt="master"></li>
+		</ul></a>
+	</li>
+	
+
+</ul>
+<p>
+<a href="http://api.discogs.com/database/search?q=traffic&amp;per_page=5&amp;type=&amp;page=5">Next<span class="counter">Displaying 20 of 7748 items</span>
+</a>
+</p>
+</li>
+</ul>
+
+
+			</div>
+
+
+	
+	</div><!-- end of wrapper -->
+</body></html>

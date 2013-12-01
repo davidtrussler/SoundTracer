@@ -1,0 +1,123 @@
+/* BEGIN search -- */
+#search {
+	position: absolute; 
+	top: 48.79999923706055px; 
+	top: -webkit-calc(36px + 0.8em);  
+	z-index: 10; 
+ 	width: 96%; 
+ 	padding: 0.4em 2%; 
+ 	background-color: #fff;
+ 	border-bottom: solid 1px; 
+	-webkit-box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.5);
+	/* -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); */
+}
+
+#search.hidden {
+	display: none; 
+}
+
+#search fieldset {
+	padding: 0; 
+	margin: 0.4em 0 0; 
+	border: none; 
+	text-align: left; 
+}
+
+#search fieldset:first-child {
+	position: relative; 
+	padding: 0 2.08333333333% 0 0; 
+	padding: 0 -webkit-calc(100% / 96 * 2) 0 0; 
+	margin: 0 56.400001525878906px 0 0; 
+	margin: 0 -webkit-calc(3.4em + 2px) 0 0; 
+}
+ 
+#search .input > legend, 
+#search .input > label {
+	display: none; 
+}
+
+#search .input input, 
+#search .input button {
+	padding: 0.2em; 
+	border: solid 1px; 
+	line-height: 1; 
+}
+
+#search .input > input {
+	float: left; 
+	/* box-sizing: border-box; */
+	width: 100%;
+}
+ 
+#search .input button {
+	position: absolute; 
+	top: 0; 
+	right: -56.400001525878906px; 
+	right: -webkit-calc(-3.4em - 2px); 
+	width: 3em; 
+	padding-top: 0.35em; 
+	padding-bottom: 0.25em; 
+ 	font-weight: bold; 
+ 	text-transform: uppercase; 
+}
+
+#search .filter legend {
+	margin: 0 0 0.25em; 
+}
+
+#search .filter li {
+	float: left; 
+	width: 25%;
+	margin: 0 0 20px; 
+	margin: 0 0 -webkit-calc(1em * 1.25); 
+	text-align: center; 	
+}
+
+#search .filter li:first-child {
+	margin-left: -999em; 
+}
+ 
+#search .filter input {
+	position: absolute; 
+	left: -999em; 
+}
+
+#search .filter label {
+	display: block; 
+	height: 32px; 
+	opacity: 0.5; 
+}
+
+#search .filter input[value=artist]~label {
+	background: url(../graphics/artist32.png) no-repeat 50%; 
+}
+
+#search .filter input[value=master]~label {
+	background: url(../graphics/master32.png) no-repeat 50%; 
+}
+
+#search .filter input[value=release]~label {
+	background: url(../graphics/release32.png) no-repeat 50%; 
+}
+
+#search .filter input[value=label]~label {
+	background: url(../graphics/label32.png) no-repeat 50%; 
+}
+
+#search .filter .selected label {
+	opacity: 1; 
+}
+
+#search .filter label span {
+	display: block; 
+	padding: 34px 0 0; 
+	padding: -webkit-calc(32px + 0.125em) 0 0; 
+}
+
+/*
+#searchicon::hover {
+	display: block;
+}
+*/
+/* -- END search */

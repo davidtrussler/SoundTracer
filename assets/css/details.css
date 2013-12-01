@@ -1,0 +1,155 @@
+li.page > div {
+	margin-top: 0.5em;
+	padding-top: 0.5em;
+	border-top: solid 1px;
+}
+
+li.page > div:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+li.page > div > ul:after {
+	content: '.';
+	display: block; 
+	clear: both; 
+	height: 0; 
+	visibility: hidden; 
+}
+
+li.page > div > ul > li {
+	float: left; 
+	margin: 0 0.25em 0 0; 
+}
+
+li.page > div > ul > li:after {
+	content: ','; 
+}
+
+li.page > div.images > ul > li:after {
+	content: none; 
+}
+
+li.page > div.tracklist td.duration {
+	text-align: right; 	
+}
+
+li.page > div.tracklist td:last-child {
+	padding-right: 0; 
+}
+
+li.page > div > ul > li:last-child, 
+li.page > div.extraartists > ul > li {
+	margin-right: 0; 
+}
+
+li.page > div > ul > li:last-child:after, 
+li.page > div.extraartists > ul > li:after {
+	content: none; 
+}
+
+li.page > div.extraartists > ul > li {
+	clear: left; 
+}
+
+li.page > div > ul > li span.role:after {
+	content: ':'; 
+}
+
+/*
+li.page > div > ul > li > span {
+	margin: 0 0 0 0.5em; 
+}
+*/
+
+li.page > div > ul > li > span.cat:before {
+	margin: 0 0 0 0.25em; 
+}
+
+li.page > div > ul > li > span.cat:before {
+	content: '('; 
+}
+
+li.page > div > ul > li > span.cat:after {
+	content: ')'; 
+}
+
+li.page > div > ul > li > span {
+	float: left;
+	margin: 0 0.25em 0 0; 
+}
+
+li.page > div > ul > li > span:last-child {
+	margin-right: 0; 
+}
+
+li.page > div > ul > li > span.descriptions {
+	margin-right: 0; 
+}
+
+li.page > div > ul > li > span.descriptions > ul > li {
+	float: left; 
+	margin: 0 0.25em 0 0; 
+}
+
+li.page > div > ul > li > span.descriptions > ul > li:after {
+	content: ','; 
+	margin-right: 0; 
+}
+
+li.page > div > ul > li > span.descriptions > ul > li:after:last-child {
+	content: none; 
+}
+
+li.page > div > ul > li > span.descriptions > ul > li:first-child:before {
+	content: '('; 
+}
+
+li.page > div > ul > li > span.descriptions > ul > li:last-child {
+	margin-right: 0; 
+}
+
+li.page > div > ul > li > span.descriptions > ul > li:last-child:after {
+	content: ')'; 
+}
+
+/*
+li.page > div > ul > li > span.name:after {
+	content: ': '; 
+}
+*/
+
+/* 
+li.page > div > ul > li > span.descriptions:before {
+	content: ': ';
+	display: inline-block; 
+}
+*/
+
+/*
+li.page > div > ul > li > span:first-child {
+	margin-left: 0; 
+}
+*/
+
+li.page > div > ul > li > span > ul {
+	display: inline-block; 
+	/* margin: 0 0 0 0.5em; */
+}
+
+/*
+li.page > div > ul > li > span > ul > li:before {
+	content: ', '; 
+}
+
+li.page > div > ul > li > span > ul > li:first-child:before {
+	content: none; 
+}
+*/
+
+/*
+li.page > div > ul > li > span > ul > li:first-child {
+	margin-left: 0; 
+}
+*/

@@ -1,0 +1,71 @@
+.listing {
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: solid 1px;
+	clear: both;
+}
+
+li.listing ul {
+	position: relative; 
+	min-height: 90px; /* height of image */
+}
+
+.listing ul > li {
+	padding: 0 32px 0 90px; 
+	margin: 0 2.08333333333% 0.25em; 
+	margin: 0 -webkit-calc(2% * 100 / 96) 0.25em; 
+}
+
+.listing ul > li:last-child {
+	margin-bottom: 0; 
+}
+
+.listing ul > li.thumb {
+	width: 90px;
+	float: left;
+	padding: 0; 
+	margin: 0; 
+}
+
+.listing ul > li.thumb img {
+	/* width: 100%;
+	position: relative;
+	top: 0.45em; */
+	float: right; 
+	max-width: 90px; 
+	max-height: 90px; 
+}
+
+/*
+.searchResults .listing ul > li.title, 
+.releases .listing ul > li.artist {
+	font-weight: bold; 
+}
+*/
+
+.listing ul > li.label > span:before, 
+.listing ul > li.format > span:before {
+	content: ', '; 
+}
+
+.listing ul > li.label > span:first-child:before, 
+.listing ul > li.format > span:first-child:before {
+	content: none; 
+}
+
+.listing ul > li.type {
+	position: absolute;
+	width: 32px; 
+	height: 32px; 
+	bottom: 0;
+	right: 0;
+	padding: 0; 
+	margin: 0
+	/* text-align: right; */
+}
+
+/* 
+.listing ul {
+ 	margin-left: 12%;
+}
+*/
